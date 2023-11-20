@@ -1,0 +1,127 @@
+.profile {
+  max-width: 880px;
+  display: flex;
+  margin: 2.81rem auto;
+}
+
+.profile__avatar {
+  width: 10.54688rem;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 1.87rem;
+}
+
+.profile__info {
+  position: relative;
+  margin: 1.61rem auto 1.55rem 0.23rem;
+  width: 25.9375rem;
+  height: 4.8125rem;
+  display: flex;
+  color: white;
+}
+
+.profile__name {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Inter;
+  font-size: 2.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+  margin: 0 0 1rem;
+}
+
+.profile__edit-button {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0.94rem;
+  border: none;
+  background-image: url(/images/Edit-Button.png);
+}
+
+.profile__edit-button:hover {
+  opacity: 0.6;
+}
+
+.profile__about {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile__add-button {
+  width: 9.375rem;
+  height: 3.125rem;
+  align-self: center;
+  border: none;
+  background-color: #000;
+  background-image: url(/images/Add-Button.png);
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 320px) and (max-width: 970px) {
+  .profile {
+    max-width: 282px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2.63rem auto;
+  }
+
+  .profile__avatar {
+    flex-shrink: 0;
+    margin: auto;
+  }
+
+  .profile__info {
+    width: 17.625rem;
+    height: 3.125rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .profile__name {
+    position: unset;
+    margin: 0;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .profile__edit-button {
+    margin-left: 1.5rem;
+    position: unset;
+    border: none;
+    background-image: url(/images/Edit-Button.png);
+  }
+
+  .profile__about {
+    position: unset;
+    margin: 0.88rem auto;
+  }
+  .profile__add-button {
+    margin-top: 2.25rem;
+    width: 17.625rem;
+    height: 3.125rem;
+    background-image: url(/images/add-button-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 2px #fff;
+  }
+}

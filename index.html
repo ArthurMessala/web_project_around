@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EUA Afora</title>
+    <link rel="stylesheet" href="pages/index.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <img class="logo" src="/images/logo.png" alt="logo around the U.S" />
+      <hr class="header__line"></hr>
+    </header>
+    <main class="main">
+      <section class="profile">
+        <img class="profile__avatar" src="/images/profile-img.png" alt="foto do perfil">
+        <div class="profile__info">
+        <h1 class="profile__name">Jacques Cousteau</h1>
+        <button type="edit" class="profile__edit-button"></button>
+        <h3 class="profile__about">Explorar</h3>
+
+      </div>
+      <button class="profile__add-button"></button>
+      </section>
+      <section class="elements">
+        <div class="element">
+          <img class="element__image" src="/images/vale-de-yosemite.png" alt="Foto do caminho de um rio no Vale de Yosemite">
+          <h2 class="element__title">Vale de Yosemite <button type="submit" class="element__like-button"></button></h2>
+        </div>
+        <div class="element">
+          <img class="element__image" src="/images/lago-louise.png" alt="Foto do meio de um rio no Lago Louise">
+          <h2 class="element__title">Lago Louise <button type="submit" class="element__like-button"></button></h2>
+        </div>
+        <div class="element">
+          <img class="element__image" src="/images/montanhas.png" alt="Foto de montanhas">
+          <h2 class="element__title">Montanhas Care... <button type="submit" class="element__like-button"></button></h2>
+        </div>
+        <div class="element">
+          <img class="element__image" src="/images/latemar.png" alt="Montanhas de Latemar a noite">
+          <h2 class="element__title">Latemar <button type="submit" class="element__like-button"></button></h2>
+        </div>
+        <div class="element">
+          <img class="element__image" src="/images/vanoise.png" alt="Montanhas de Latemar a noite">
+          <h2 class="element__title">Vanoise Nationa... <button type="submit" class="element__like-button"></button></h2>
+        </div>
+        <div class="element">
+          <img class="element__image" src="/images/lago-di-braies.png" alt="Montanhas de Latemar a noite">
+          <h2 class="element__title">Lago di Braies <button type="submit" class="element__like-button"></button></h2>
+        </div>
+      </section>
+      <section class="popup popup-edit">
+        <div class="popup-edit__container">
+        <form class="popup-edit__form">
+          <button class="popup-edit__close-button"></button>
+          <h2 class="popup-edit__title">Editar perfil</h2>
+          <input class="popup-edit__input-title" placeholder="Título" type="text" name="name">
+          <input class="popup-edit__input-about" placeholder="Sobre mim" type="text" name="image">
+          <button type="submit" class="popup-edit__save-button">Salvar</button>
+        </form>
+      </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__signature">© 2021 Around The U.S.</p>
+    </footer>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>

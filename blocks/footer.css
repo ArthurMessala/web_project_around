@@ -1,0 +1,30 @@
+.footer {
+  max-width: 880px;
+  margin: 4.25rem auto 3.75rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__signature {
+  width: 12.25rem;
+  height: 1.375rem;
+  color: #545454;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 320px) and (max-width: 970px) {
+  .footer {
+    width: 17.625rem;
+    margin: 3.12rem auto 2.25rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer__signature {
+    font-size: 0.875rem;
+    line-height: normal;
+  }
+}
