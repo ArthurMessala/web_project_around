@@ -7,3 +7,7 @@ Tecnologias:
 HTML
 CSS
 Java Script
+
+Página no GitHub Pages: https://arthurmessala.github.io/web_project_around/
+
+Futuramente pretendo implementar mais funcionalidades em JS

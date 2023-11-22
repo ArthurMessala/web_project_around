@@ -20,7 +20,7 @@
   height: 17.625rem;
 }
 
-.element__title {
+.element__info {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -32,6 +32,13 @@
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+}
+
+.element__title {
+  max-width: 205px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .element__like-button {

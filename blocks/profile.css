@@ -21,6 +21,7 @@
 }
 
 .profile__name {
+  max-width: 23.3125rem;
   color: #fff;
   position: absolute;
   top: 0;
@@ -31,6 +32,9 @@
   font-weight: 500;
   line-height: 3rem;
   margin: 0 0 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .profile__edit-button {
@@ -48,6 +52,7 @@
 }
 
 .profile__about {
+  max-width: 23.3125rem;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -58,6 +63,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .profile__add-button {
@@ -94,6 +102,7 @@
   }
 
   .profile__name {
+    max-width: 12.25rem;
     position: unset;
     margin: 0;
     text-align: center;
@@ -112,8 +121,12 @@
   }
 
   .profile__about {
+    max-width: 23.3125rem;
     position: unset;
     margin: 0.88rem auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .profile__add-button {
     margin-top: 2.25rem;
