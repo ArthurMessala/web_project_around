@@ -44,7 +44,7 @@
   right: 0;
   top: 0.94rem;
   border: none;
-  background-image: url(/images/Edit-Button.png);
+  background-image: url(../images/Edit-Button.png);
 }
 
 .profile__edit-button:hover {
@@ -74,7 +74,7 @@
   align-self: center;
   border: none;
   background-color: #000;
-  background-image: url(/images/Add-Button.png);
+  background-image: url(../images/Add-Button.png);
 }
 
 .profile__add-button:hover {
@@ -117,7 +117,7 @@
     margin-left: 1.5rem;
     position: unset;
     border: none;
-    background-image: url(/images/Edit-Button.png);
+    background-image: url(../images/Edit-Button.png);
   }
 
   .profile__about {
@@ -132,7 +132,7 @@
     margin-top: 2.25rem;
     width: 17.625rem;
     height: 3.125rem;
-    background-image: url(/images/add-button-mobile.png);
+    background-image: url(../images/add-button-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     border: solid 2px #fff;
