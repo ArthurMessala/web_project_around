@@ -29,7 +29,7 @@
 }
 
 .popup-edit__close-button {
-  background: url(/images/Close-Icon.png);
+  background: url(../images/Close-Icon.png);
   width: 1.625rem;
   height: 1.625rem;
   position: absolute;

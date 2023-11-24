@@ -45,7 +45,7 @@
   width: 100%;
   width: 1.3125rem;
   height: 1.1875rem;
-  background-image: url(/images/like-inative.png);
+  background-image: url(../images/like-inative.png);
   border: none;
   background-color: transparent;
 }
@@ -55,7 +55,7 @@
 }
 
 .like-button_active {
-  background-image: url(/images/like-active.png);
+  background-image: url(../images/like-active.png);
 }
 
 @media screen and (min-width: 320px) and (max-width: 970px) {
