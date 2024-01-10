@@ -21,78 +21,13 @@
           />
           <div class="profile__info">
             <h1 class="profile__name">Jacques Cousteau</h1>
-            <button type="submit" class="profile__edit-button"></button>
+            <button type="button" class="profile__edit-button"></button>
             <h3 class="profile__about">Explorar</h3>
           </div>
           <button class="profile__add-button"></button>
         </section>
         <section class="elements">
-          <div class="element">
-            <img
-              class="element__image"
-              src="./images/vale-de-yosemite.png"
-              alt="Foto do caminho de um rio no Vale de Yosemite"
-            />
-            <h2 class="element__info">
-              <span class="element__title">Vale de Yosemite</span>
-              <button type="submit" class="element__like-button"></button>
-            </h2>
-          </div>
-          <div class="element">
-            <img
-              class="element__image"
-              src="./images/lago-louise.png"
-              alt="Foto do meio de um rio no Lago Louise"
-            />
-            <h2 class="element__info">
-              <span class="element__title">Lago Louise</span>
-              <button type="submit" class="element__like-button"></button>
-            </h2>
-          </div>
-          <div class="element">
-            <img
-              class="element__image"
-              src="./images/montanhas.png"
-              alt="Foto de montanhas"
-            />
-            <h2 class="element__info">
-              <span class="element__title">Montanhas do Himalaia</span>
-              <button type="submit" class="element__like-button"></button>
-            </h2>
-          </div>
-          <div class="element">
-            <img
-              class="element__image"
-              src="./images/latemar.png"
-              alt="Montanhas de Latemar a noite"
-            />
-            <h2 class="element__info">
-              <span class="element__title">Latemar</span>
-              <button type="submit" class="element__like-button"></button>
-            </h2>
-          </div>
-          <div class="element">
-            <img
-              class="element__image"
-              src="./images/vanoise.png"
-              alt="Montanhas de Latemar a noite"
-            />
-            <h2 class="element__info">
-              <span class="element__title">Vanoise National Park</span>
-              <button type="submit" class="element__like-button"></button>
-            </h2>
-          </div>
-          <div class="element">
-            <img
-              class="element__image"
-              src="./images/lago-di-braies.png"
-              alt="Montanhas de Latemar a noite"
-            />
-            <h2 class="element__info">
-              <span class="element__title">Lago di Braies</span>
-              <button type="submit" class="element__like-button"></button>
-            </h2>
-          </div>
+          
         </section>
         <section class="popup popup-edit">
           <div class="popup-edit__container">
@@ -117,11 +52,35 @@
             </form>
           </div>
         </section>
+        <section class="popup popup-addCard">
+          <div class="popup-addCard__container">
+            <form class="popup-addCard__form">
+              <button class="popup-addCard__close-button"></button>
+              <h2 class="popup-addCard__title">Novo local</h2>
+              <input
+                class="popup-addCard__input-title"
+                placeholder="Título"
+                type="text"
+                name="name"
+              />
+              <input
+                class="popup-addCard__input-image"
+                placeholder="Link de imagem"
+                type="text"
+                name="image"
+              />
+              <button type="button" class="popup-addCard__save-button">
+                Salvar
+              </button>
+            </form>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <p class="footer__signature">© 2021 Around The U.S.</p>
       </footer>
       <script src="scripts/index.js"></script>
+
     </div>
   </body>
 </html>

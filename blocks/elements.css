@@ -8,9 +8,10 @@
 }
 
 .element {
+  position: relative;
   width: 100%;
   display: flex;
-  border-radius: 10px;
+  border-radius: 15px;
   flex-wrap: wrap;
   background-color: white;
 }
@@ -18,6 +19,8 @@
 .element__image {
   width: 100%;
   height: 17.625rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .element__info {
@@ -58,6 +61,26 @@
   background-image: url(../images/like-active.png);
 }
 
+.element__close-button{
+  position: absolute;
+  top: 1.3rem;
+  right: 0.94rem;
+  background-image: url(../images/Trash.png);
+  width: 1.125rem;
+  height: 1.20625rem;
+  background-repeat: no-repeat;
+  border: 0;
+  background-color: transparent;
+}
+
+.element__close-button:hover{
+  background-image: url(../images/TrashHover.png);
+
+}
+
+.removeButton{
+  display: none !important;
+}
 @media screen and (min-width: 320px) and (max-width: 970px) {
   .elements {
     grid-template-columns: 1fr;
@@ -66,7 +89,7 @@
     width: 17.625rem;
     height: 22.5625rem;
     display: flex;
-    border-radius: 10px;
+    border-radius: 15px;
     flex-wrap: wrap;
     background-color: white;
     margin: auto;

@@ -4,7 +4,8 @@
 @import url(../blocks/profile.css);
 @import url(../blocks/elements.css);
 @import url(../blocks/footer.css);
-@import url(../blocks/popup.css);
+@import url(../blocks/popupEditProfile.css);
+@import url(../blocks/popupAddCard.css);
 
 .body {
   display: block;

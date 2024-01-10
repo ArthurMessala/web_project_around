@@ -1,0 +1,117 @@
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-addCard__container {
+  width: 26.875rem;
+  height: 20.625rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: #fff;
+}
+.popup-addCard__form {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.popup_opened {
+  display: block;
+}
+
+.popup-addCard__close-button {
+  background: url(../images/Close-Icon.png);
+  width: 1.625rem;
+  height: 1.625rem;
+  position: absolute;
+  border: none;
+  top: -30px;
+  right: -30px;
+  background-size: contain;
+  background-color: transparent;
+}
+
+.popup-addCard__close-button:hover {
+  opacity: 0.6;
+}
+
+.popup-addCard__title {
+  width: 20.625rem;
+  height: 1.4375rem;
+  margin: 2.13rem 4rem auto 2.25rem;
+  color: #000;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.popup-addCard__input-title {
+  width: 22.375rem;
+  height: 1.70344rem;
+  border: 0;
+  border-bottom: solid 0.0625rem #d9d9d9;
+  color: #000;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.popup-addCard__input-image {
+  width: 22.375rem;
+  height: 1.70344rem;
+  border: 0;
+  border-bottom: solid 0.0625rem #d9d9d9;
+  color: #000;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input::placeholder {
+  color: #000;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.popup-addCard__save-button {
+  width: 22.375rem;
+  height: 3.1345rem;
+  border-radius: 0.125rem;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.popup-addCard__save-button:hover {
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 320px) and (max-width: 970px) {
+  .popup-addCard__close-button {
+    top: -3.15rem;
+    right: 0px;
+  }
+}
