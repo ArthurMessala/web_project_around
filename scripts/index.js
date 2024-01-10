@@ -112,6 +112,8 @@ addCardSaveButton.addEventListener("click", function (evt) {
   if (titulo && imagem) {
     const newCard = `
     <div class="element">
+    <button type="button" class="element__close-button"></button>
+
     <img
       class="element__image"
       src="${imagem}"
