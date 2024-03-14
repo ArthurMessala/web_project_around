@@ -45,6 +45,7 @@
   top: 0.94rem;
   border: none;
   background-image: url(../images/Edit-Button.png);
+  cursor: pointer;
 }
 
 .profile__edit-button:hover {
@@ -75,6 +76,7 @@
   border: none;
   background-color: #000;
   background-image: url(../images/Add-Button.png);
+  cursor: pointer;
 }
 
 .profile__add-button:hover {

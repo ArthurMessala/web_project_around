@@ -23,11 +23,6 @@ const popupAddCardCloseButton = document.querySelector(
 );
 const addCardSaveButton = document.querySelector(".popup-addCard__save-button");
 
-//like button
-const likeButtons = document.querySelectorAll(".element__like-button");
-
-const removeButton = document.querySelectorAll(".element__close-button");
-
 editButton.addEventListener("click", function () {
   popupEditProfile.classList.add("popup_opened");
   inputName.value = profileName.textContent;
@@ -43,11 +38,8 @@ function handleProfileFormSubmit(evt) {
   profileName.textContent = inputName.value;
   profileAbout.textContent = inputAbout.value;
   popupEditProfile.classList.remove("popup_opened");
-
 }
 editForm.addEventListener("submit", handleProfileFormSubmit);
-
-
 
 const initialCards = [
   {
@@ -76,28 +68,24 @@ const initialCards = [
   },
 ];
 
-document.addEventListener('DOMContentLoaded', function(){
-initialCards.forEach(function(card){
-  const newCard = `
-    <div class="element">
+document.addEventListener("DOMContentLoaded", function () {
+  initialCards.forEach(function (card) {
+    const newCard = document.createElement("div");
+    newCard.classList.add("element");
+
+    newCard.innerHTML = `
     <button type="button" class="element__close-button"></button>
-    <img
-      class="element__image"
-      src="${card.link}"
-      alt="${card.name}"
-    />
+    <img class="element__image" src="${card.link}" alt="${card.name}" />
     <h2 class="element__info">
       <span class="element__title">${card.name}</span>
       <button type="submit" class="element__like-button"></button>
     </h2>
-  </div>
-    `;
+  `;
 
-    cards.insertAdjacentHTML("beforeend", newCard);
-
+    cards.append(newCard);
+    cards_events();
+  });
 });
-});
-
 
 addCardButton.addEventListener("click", function () {
   popupAddCard.classList.add("popup_opened");
@@ -110,51 +98,51 @@ addCardSaveButton.addEventListener("click", function (evt) {
   const imagem = addCardImage.value.trim();
 
   if (titulo && imagem) {
-    const newCard = `
-    <div class="element">
-    <button type="button" class="element__close-button"></button>
+    const newCard = document.createElement("div");
+    newCard.classList.add("element");
 
-    <img
-      class="element__image"
-      src="${imagem}"
-      alt="${titulo}"
-    />
-    <h2 class="element__info">
-      <span class="element__title">${titulo}</span>
-      <button type="submit" class="element__like-button"></button>
-    </h2>
-  </div>
+    newCard.innerHTML = `
+      <button type="button" class="element__close-button"></button>
+      <img class="element__image" src="${imagem}" alt="${titulo}" />
+      <h2 class="element__info">
+        <span class="element__title">${titulo}</span>
+        <button type="submit" class="element__like-button"></button>
+      </h2>
     `;
 
-    cards.insertAdjacentHTML("beforeend", newCard);
+    cards.prepend(newCard);
     addForm.reset();
     popupAddCard.classList.remove("popup_opened");
+    cards_events();
   } else {
     alert("Please, fill all inputs");
   }
 });
-
-
 
 popupAddCardCloseButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupAddCard.classList.remove("popup_opened");
 });
 
-likeButtons.forEach(function(button) {
-  button.addEventListener("click", function() {
+function cards_events() {
+  const likeButtons = document.querySelectorAll(".element__like-button");
+
+  const removeButton = document.querySelectorAll(".element__close-button");
+
+  likeButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
       if (button.classList.contains("like-button_active")) {
-          button.classList.remove("like-button_active");
+        button.classList.remove("like-button_active");
       } else {
-          button.classList.add("like-button_active");
+        button.classList.add("like-button_active");
       }
+    });
   });
-});
 
-
-removeButton.forEach(function(button){
-  button.addEventListener("click", function(){
-    card.classList.add("removeButton");
+  removeButton.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const card = button.closest(".element");
+      card.classList.add("removeButton");
+    });
   });
-});
-
+}

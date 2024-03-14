@@ -51,6 +51,7 @@
   background-image: url(../images/like-inative.png);
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .element__like-button:hover {
@@ -61,7 +62,7 @@
   background-image: url(../images/like-active.png);
 }
 
-.element__close-button{
+.element__close-button {
   position: absolute;
   top: 1.3rem;
   right: 0.94rem;
@@ -73,12 +74,12 @@
   background-color: transparent;
 }
 
-.element__close-button:hover{
+.element__close-button:hover {
   background-image: url(../images/TrashHover.png);
-
+  cursor: pointer;
 }
 
-.removeButton{
+.removeButton {
   display: none !important;
 }
 @media screen and (min-width: 320px) and (max-width: 970px) {
